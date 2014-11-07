@@ -5,13 +5,25 @@ gem 'rails', '4.1.6'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
-
+group :development do
+  gem "pry-nav"
+  gem "pry-rails"
+  gem "pry-stack_explorer"
+  gem "pry-theme"
+  gem 'spring'
+end
 
 gem 'pg'
 
 gem 'devise'
 gem 'doorkeeper'
+gem 'oj'
+gem 'oj_mimic_json'
+gem 'active_model_serializers'
+gem "grape"
+# gem 'grape-swagger-rails'
+gem "grape-active_model_serializers"
+gem "rack-cors", require: "rack/cors"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
