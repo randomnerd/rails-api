@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  mount_devise_token_auth_for 'User', at: '/auth'
-  devise_scope :user do
-    post :token, :to => "sessions#create"
-  end
+  use_doorkeeper
 #   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

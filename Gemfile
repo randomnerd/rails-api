@@ -11,8 +11,7 @@ gem 'spring', :group => :development
 gem 'pg'
 
 gem 'devise'
-gem 'omniauth'
-gem 'devise_token_auth'
+gem 'doorkeeper'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
