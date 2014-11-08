@@ -17,11 +17,10 @@ gem 'pg'
 
 gem 'devise'
 gem 'doorkeeper'
-gem 'oj'
-gem 'oj_mimic_json'
 gem 'active_model_serializers'
 gem "grape"
-# gem 'grape-swagger-rails'
+gem 'grape-swagger-rails'
+gem 'wine_bouncer'
 gem "grape-active_model_serializers"
 gem "rack-cors", require: "rack/cors"
 

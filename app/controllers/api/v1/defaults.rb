@@ -11,6 +11,12 @@ module API
         formatter :json, Grape::Formatter::ActiveModelSerializers
 
         helpers do
+          def current_token; env['api.token']; end
+
+          def current_resource_owner
+            User.find(current_token.resource_owner_id) if current_token
+          end
+          
           def permitted_params
             @permitted_params ||= declared(params, include_missing: false)
           end

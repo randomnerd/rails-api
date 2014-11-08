@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   use_doorkeeper
-  mount API::Base, at: "/"
-#   mount GrapeSwaggerRails::Engine, at: "/documentation"
+  mount API::Base => '/'
+  mount GrapeSwaggerRails::Engine, at: "/documentation"
 
 #   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
